@@ -1,9 +1,7 @@
 /*! Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license. */
 import '../../yamui';
 import * as React from 'react';
-import {
-  NestableBaseComponentProps as BoxProps,
-} from '../../util/BaseComponent/props';
+import { NestableBaseComponentProps as BoxProps } from '../../util/BaseComponent/props';
 import { join } from '../../util/classNames';
 import Block, { GutterSize } from '../Block';
 import './Box.css';
@@ -19,7 +17,7 @@ export default class Box extends React.Component<BoxProps, {}> {
 
     return (
       <Block className={join(['y-box', className])} padding={GutterSize.SMALL}>
-        {children}
+        <div className="y-box--inner">{children}</div>
       </Block>
     );
   }

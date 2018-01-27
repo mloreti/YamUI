@@ -4,19 +4,33 @@ exports[`<Box /> with additional className matches its snapshot 1`] = `
 <Block
   className="y-box TEST_CLASSNAME"
   padding="small"
-/>
+>
+  <div
+    className="y-box--inner"
+  />
+</Block>
 `;
 
-exports[`<Box /> with children passed matches its snapshot 1`] = `
+exports[`<Box /> with child content matches its snapshot 1`] = `
 <Block
   className="y-box"
   padding="small"
-/>
+>
+  <div
+    className="y-box--inner"
+  >
+    child content
+  </div>
+</Block>
 `;
 
 exports[`<Box /> with default options matches its snapshot 1`] = `
 <Block
   className="y-box"
   padding="small"
-/>
+>
+  <div
+    className="y-box--inner"
+  />
+</Block>
 `;

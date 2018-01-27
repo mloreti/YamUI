@@ -18,9 +18,7 @@ describe('<Box />', () => {
 
   describe('with additional className', () => {
     beforeEach(() => {
-      component = shallow(
-        <Box className="TEST_CLASSNAME" />,
-      );
+      component = shallow(<Box className="TEST_CLASSNAME" />);
     });
 
     it('matches its snapshot', () => {
@@ -28,9 +26,9 @@ describe('<Box />', () => {
     });
   });
 
-  describe('with children passed', () => {
+  describe('with child content', () => {
     beforeEach(() => {
-      component = shallow(<Box/>);
+      component = shallow(<Box>child content</Box>);
     });
 
     it('matches its snapshot', () => {
