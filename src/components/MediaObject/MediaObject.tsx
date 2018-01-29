@@ -79,7 +79,7 @@ export default class MediaObject extends React.Component<MediaObjectProps> {
         {metadataContent}
       </MediaObjectMetadata>
     );
-    const extraContentChild = this.showExtra() && (
+    const extraContentChild = extraContent && (
       <MediaObjectExtra ellipsis={!allowTextWrap}>{extraContent}</MediaObjectExtra>
     );
 
@@ -127,15 +127,5 @@ export default class MediaObject extends React.Component<MediaObjectProps> {
       return false;
     }
     return true;
-  }
-
-  private showExtra() {
-    const { extraContent, size } = this.props;
-
-    if (!extraContent) {
-      return false;
-    }
-
-    return size === MediaObjectSize.XLARGE;
   }
 }
