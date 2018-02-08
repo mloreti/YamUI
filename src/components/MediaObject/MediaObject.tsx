@@ -64,7 +64,15 @@ const ImageWidthMap = {
  */
 export default class MediaObject extends React.Component<MediaObjectProps> {
   public render() {
-    const { size, imageContent, titleContent, metadataContent, extraContent, children, allowTextWrap } = this.props;
+    const {
+      size,
+      imageContent,
+      titleContent,
+      metadataContent,
+      extraContent,
+      children,
+      allowTextWrap,
+    } = this.props;
 
     const gutterSize = this.getGutterSize();
     const imageColumnClass = `y-media-object__size-${size}--image`;
@@ -79,7 +87,7 @@ export default class MediaObject extends React.Component<MediaObjectProps> {
         {metadataContent}
       </MediaObjectMetadata>
     );
-    const extraContentChild = extraContent && (
+    const extraContentChild = this.showExtra() && (
       <MediaObjectExtra ellipsis={!allowTextWrap}>{extraContent}</MediaObjectExtra>
     );
 
@@ -127,5 +135,15 @@ export default class MediaObject extends React.Component<MediaObjectProps> {
       return false;
     }
     return true;
+  }
+
+  private showExtra() {
+    const { extraContent, size } = this.props;
+
+    if (!extraContent) {
+      return false;
+    }
+
+    return size === MediaObjectSize.XLARGE;
   }
 }

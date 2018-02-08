@@ -33,7 +33,9 @@ export interface NestedComponentProps {
     | React.StatelessComponent<DebouncedOnChangePrivateProps>;
 }
 
-export default class DebouncedOnChangeComponent extends React.Component<DebouncedOnChangeProps & NestedComponentProps> {
+export default class DebouncedOnChangeComponent extends React.Component<
+  DebouncedOnChangeProps & NestedComponentProps
+> {
   public static defaultProps = {
     debouncedOnChangeTime: 700,
   };

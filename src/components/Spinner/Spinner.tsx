@@ -63,7 +63,7 @@ export interface SpinnerProps extends BaseComponentProps {
   /**
    * Will center the Spinner horizontally within its container.
    */
-  centered?: boolean;
+  isCentered?: boolean;
 }
 
 /**
@@ -95,12 +95,12 @@ export default class Spinner extends React.Component<SpinnerProps> {
   }
 
   private getClasses() {
-    const { centered, className, color, size } = this.props;
+    const { isCentered, className, color, size } = this.props;
 
     const classes: string[] = ['y-spinner', `y-spinner__color-${color}`, `y-spinner__size-${size}`];
 
-    if (centered) {
-      classes.push('y-spinner__centered');
+    if (isCentered) {
+      classes.push('y-spinner__isCentered');
     }
 
     if (className) {

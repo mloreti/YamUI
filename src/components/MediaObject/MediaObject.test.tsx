@@ -19,6 +19,14 @@ describe('<MediaObject />', () => {
     children = <div className="CHILDREN">CHILDREN CONTENT</div>;
   });
 
+  beforeEach(() => {
+    image = <img src="404.jpg" alt="" role="presentation" />;
+    title = <div className="TITLE">TITLE CONTENT</div>;
+    metadata = <div className="METADATA">METADATA CONTENT</div>;
+    extra = <div className="EXTRA">EXTRA CONTENT</div>;
+    children = <div className="CHILDREN">CHILDREN CONTENT</div>;
+  });
+
   describe('with minimal options', () => {
     beforeEach(() => {
       component = shallow(<MediaObject size={MediaObjectSize.MEDIUM} />);
@@ -94,7 +102,11 @@ describe('<MediaObject />', () => {
     describe('with allowTextWrap', () => {
       beforeEach(() => {
         component = shallow(
-          <MediaObject allowTextWrap={true} size={MediaObjectSize.MEDIUM} metadataContent={metadata} />,
+          <MediaObject
+            allowTextWrap={true}
+            size={MediaObjectSize.MEDIUM}
+            metadataContent={metadata}
+          />,
         );
       });
 

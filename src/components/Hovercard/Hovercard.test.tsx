@@ -11,6 +11,10 @@ describe('<Hovercard />', () => {
   let component: ShallowWrapper<HovercardProps, HovercardState>;
   let fullComponent: ReactWrapper<HovercardProps, HovercardState>;
 
+  beforeEach(() => {
+    jest.useFakeTimers();
+  });
+
   describe('with default options', () => {
     beforeEach(() => {
       component = shallow(

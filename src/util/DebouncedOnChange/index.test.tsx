@@ -9,9 +9,9 @@ interface InnerComponentProps extends DebouncedOnChangeProps {
 }
 
 const InnerComponent: React.StatelessComponent<InnerComponentProps> = props => <input {...props} />;
-const TestComponent: React.StatelessComponent<InnerComponentProps & DebouncedOnChangePrivateProps> = props => (
-  <InnerComponent onChange={props.unifiedOnChange} />
-);
+const TestComponent: React.StatelessComponent<
+  InnerComponentProps & DebouncedOnChangePrivateProps
+> = props => <InnerComponent onChange={props.unifiedOnChange} />;
 const DebouncedOnChangeTestComponent = (props: InnerComponentProps) => {
   return <DebouncedOnChange {...props} component={TestComponent} />;
 };
