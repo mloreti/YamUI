@@ -7,7 +7,7 @@ const pkg = require('../../package.json');
 
 const componentsWithoutPathLine = ['Icons'];
 
-const getComponentPathLine = (componentPath) => {
+const getComponentPathLine = componentPath => {
   const ext = path.extname(componentPath);
   const name = path.basename(componentPath, ext);
   if (componentsWithoutPathLine.indexOf(name) >= 0) {
@@ -30,7 +30,7 @@ module.exports = {
     {
       name: 'Graphics',
       content: path.resolve(root, 'src/components/README.md'),
-      components: path.resolve(root, 'src/components/Icon/docs/Icons.tsx'),
+      components: path.resolve(root, 'src/components/@(Icon|Illustration)/docs/*.tsx'),
     },
     {
       name: 'Demos',
@@ -48,6 +48,7 @@ module.exports = {
     '**/*.spec.tsx',
     '**/components/Fabric/*',
     '**/components/Icon/icons/*',
+    '**/components/Illustration/sizedIllustrations/*',
   ],
   skipComponentsWithoutExample: true,
   resolver: docgen.resolver.findAllComponentDefinitions,
