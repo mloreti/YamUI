@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Illustration /> an illustration with additional className matches its snapshot 1`] = `
+<svg
+  aria-hidden="true"
+  className="y-illustration TEST_CLASSNAME"
+  focusable="false"
+  height="16"
+  tabIndex={-1}
+  viewBox="0 0 16 16"
+  width="16"
+>
+  <path
+    d="M14 15H4V1h8l2 2z"
+    fill="#FFF"
+  />
+  <path
+    d="M12 0H3v16h12V3l-3-3zm0 1.5L13.5 3H12V1.5zM14 15H4V1h7v3h3v11z"
+    fill="#949494"
+  />
+  <path
+    d="M12 10v3H8v-3h4m1-1H7v5h6V9z"
+    fill="#C8C8C8"
+  />
+  <path
+    d="M10 6v3H7V6h3m1-1H6v5h5V5z"
+    fill="#C8C8C8"
+  />
+  <path
+    d="M1 5l7-1v10l-7-1z"
+    fill="#A4373A"
+  />
+  <path
+    d="M8 5h3v2H8zM8 9h5v2H8z"
+    fill="#F7A8AB"
+  />
+  <g
+    fill="#FFF"
+  >
+    <path
+      d="M4 9h1v1H4zM4 7h1v1H4zM3 8h1v1H3zM3 9h1v1H3zM5 9h1v1H5zM5 8h1v1H5zM2 10h1v1H2z"
+    />
+    <path
+      d="M3 10h1v1H3zM5 7h1v1H5zM3 7h1v1H3zM2 9h1v1H2zM4 6h1v1H4zM5 10h1v1H5zM6 9h1v1H6z"
+      opacity=".6"
+    />
+    <path
+      d="M6 10h1v1H6z"
+    />
+  </g>
+</svg>
+`;
+
+exports[`<Illustration /> an illustration with block matches its snapshot 1`] = `
+<svg
+  aria-hidden="true"
+  className="y-illustration y-illustration__isBlock"
+  focusable="false"
+  height="16"
+  tabIndex={-1}
+  viewBox="0 0 16 16"
+  width="16"
+>
+  <path
+    d="M14 15H4V1h8l2 2z"
+    fill="#FFF"
+  />
+  <path
+    d="M12 0H3v16h12V3l-3-3zm0 1.5L13.5 3H12V1.5zM14 15H4V1h7v3h3v11z"
+    fill="#949494"
+  />
+  <path
+    d="M12 10v3H8v-3h4m1-1H7v5h6V9z"
+    fill="#C8C8C8"
+  />
+  <path
+    d="M10 6v3H7V6h3m1-1H6v5h5V5z"
+    fill="#C8C8C8"
+  />
+  <path
+    d="M1 5l7-1v10l-7-1z"
+    fill="#A4373A"
+  />
+  <path
+    d="M8 5h3v2H8zM8 9h5v2H8z"
+    fill="#F7A8AB"
+  />
+  <g
+    fill="#FFF"
+  >
+    <path
+      d="M4 9h1v1H4zM4 7h1v1H4zM3 8h1v1H3zM3 9h1v1H3zM5 9h1v1H5zM5 8h1v1H5zM2 10h1v1H2z"
+    />
+    <path
+      d="M3 10h1v1H3zM5 7h1v1H5zM3 7h1v1H3zM2 9h1v1H2zM4 6h1v1H4zM5 10h1v1H5zM6 9h1v1H6z"
+      opacity=".6"
+    />
+    <path
+      d="M6 10h1v1H6z"
+    />
+  </g>
+</svg>
+`;
+
+exports[`<Illustration /> an illustration with minimal options matches its snapshot 1`] = `
+<svg
+  aria-hidden="true"
+  className="y-illustration"
+  focusable="false"
+  height="16"
+  tabIndex={-1}
+  viewBox="0 0 16 16"
+  width="16"
+>
+  <path
+    d="M14 15H4V1h8l2 2z"
+    fill="#FFF"
+  />
+  <path
+    d="M12 0H3v16h12V3l-3-3zm0 1.5L13.5 3H12V1.5zM14 15H4V1h7v3h3v11z"
+    fill="#949494"
+  />
+  <path
+    d="M12 10v3H8v-3h4m1-1H7v5h6V9z"
+    fill="#C8C8C8"
+  />
+  <path
+    d="M10 6v3H7V6h3m1-1H6v5h5V5z"
+    fill="#C8C8C8"
+  />
+  <path
+    d="M1 5l7-1v10l-7-1z"
+    fill="#A4373A"
+  />
+  <path
+    d="M8 5h3v2H8zM8 9h5v2H8z"
+    fill="#F7A8AB"
+  />
+  <g
+    fill="#FFF"
+  >
+    <path
+      d="M4 9h1v1H4zM4 7h1v1H4zM3 8h1v1H3zM3 9h1v1H3zM5 9h1v1H5zM5 8h1v1H5zM2 10h1v1H2z"
+    />
+    <path
+      d="M3 10h1v1H3zM5 7h1v1H5zM3 7h1v1H3zM2 9h1v1H2zM4 6h1v1H4zM5 10h1v1H5zM6 9h1v1H6z"
+      opacity=".6"
+    />
+    <path
+      d="M6 10h1v1H6z"
+    />
+  </g>
+</svg>
+`;
