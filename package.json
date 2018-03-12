@@ -81,7 +81,7 @@
     "clean:docs": "rimraf build/docs/*",
     "clean:icons": "rimraf build/icons/* src/components/Icon/icons/*.tsx",
     "clean:illustrations": "rimraf build/illustrations/* src/components/Illustration/icons/*.tsx",
-    "clean:svg": "run-p clean:*",
+    "clean:svg": "run-p clean clean:icons clean:illustrations",
     "clean": "run-p clean:build clean:dist",
     "build:css:global": "postcss src/css/index.css --output dist/yamui-base.css",
     "build:css:components": "postcss \"src/components/**/*.css\" --dir \"dist/components\" --base \"src/components\"",
