@@ -25,7 +25,7 @@ const converter = new HTMLtoJSX({ createClass: false });
 
 async function generateIndex(icons, indexTemplate) {
   const iconNames = icons.map(icon => path.basename(icon, path.extname(icon)));
-  const indexContents = template(indexTemplate)({ icons: iconNames });
+  const indexContents = template(indexTemplate)({ svgs: iconNames });
 
   const destIndexPath = path.resolve(destIconsPath, 'index.ts');
   console.log(`Writing index to ${destIndexPath}`);

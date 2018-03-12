@@ -44,7 +44,7 @@ async function generateIndex(illustrations, indexTemplate) {
       console.log(name);
       return name;
     });
-  const indexContents = template(indexTemplate)({ illustrations: illustrationNames });
+  const indexContents = template(indexTemplate)({ svgs: illustrationNames });
 
   const destIndexPath = path.resolve(destPath, 'index.ts');
   console.log(`Writing index to ${destIndexPath}`);
