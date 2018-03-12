@@ -9,6 +9,7 @@ const SVGO = require('svgo');
 const { JSDOM } = require('jsdom');
 const HTMLtoJSX = require('htmltojsx');
 const { template } = require('lodash');
+const { generateIndex } = require('./generateSvgs');
 const svgoConfig = require('./config.illustration.json');
 
 const sourcePath = path.resolve(__dirname, '../../assets/illustrations');
@@ -32,23 +33,6 @@ function getSizeFromFilePath(filePath) {
   }
 
   return sizeResults[1];
-}
-
-async function generateIndex(illustrations, indexTemplate) {
-  const illustrationNames =
-    illustrations.map((illustration) => {
-      const size = getSizeFromFilePath(illustration);
-
-      const filename = path.basename(illustration, path.extname(illustration));
-      const name = `${filename}${size}`;
-      console.log(name);
-      return name;
-    });
-  const indexContents = template(indexTemplate)({ svgs: illustrationNames });
-
-  const destIndexPath = path.resolve(destPath, 'index.ts');
-  console.log(`Writing index to ${destIndexPath}`);
-  await writeFile(destIndexPath, indexContents, 'utf8');
 }
 
 async function convert(svg, svgTemplate, size) {
@@ -80,12 +64,21 @@ async function convert(svg, svgTemplate, size) {
   }
 }
 
+function getSvgNames(illustrations) {
+  return illustrations.map((illustration) => {
+    const size = getSizeFromFilePath(illustration);
+    const filename = path.basename(illustration, path.extname(illustration));
+    return `${filename}${size}`;
+  });
+}
+
 (async () => {
   const indexTemplate = await readFile(indexTemplatePath);
   const svgTemplate = await readFile(svgTemplatePath);
   const svgs = await globFiles(`${sourcePath}/**/*.svg`, {});
+  const svgNames = getSvgNames(svgs);
 
-  await generateIndex(svgs, indexTemplate);
+  await generateIndex(svgNames, indexTemplate, destPath);
   svgs.forEach((svg) => {
     const size = getSizeFromFilePath(svg);
     convert(svg, svgTemplate, size);

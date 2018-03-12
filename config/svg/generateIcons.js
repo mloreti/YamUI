@@ -9,10 +9,11 @@ const SVGO = require('svgo');
 const { JSDOM } = require('jsdom');
 const HTMLtoJSX = require('htmltojsx');
 const { template } = require('lodash');
+const { generateIndex } = require('./generateSvgs');
 const svgoConfig = require('./config.icon.json');
 
-const sourceIconsPath = path.resolve(__dirname, '../../assets/icons');
-const destIconsPath = path.resolve(__dirname, '../../src/components/Icon/icons');
+const sourcePath = path.resolve(__dirname, '../../assets/icons');
+const destPath = path.resolve(__dirname, '../../src/components/Icon/icons');
 const indexTemplatePath = path.resolve(__dirname, 'indexTemplate.ejs');
 const iconTemplatePath = path.resolve(__dirname, 'iconTemplate.ejs');
 
@@ -22,15 +23,6 @@ const globFiles = util.promisify(glob);
 
 const optimizer = new SVGO(svgoConfig);
 const converter = new HTMLtoJSX({ createClass: false });
-
-async function generateIndex(icons, indexTemplate) {
-  const iconNames = icons.map(icon => path.basename(icon, path.extname(icon)));
-  const indexContents = template(indexTemplate)({ svgs: iconNames });
-
-  const destIndexPath = path.resolve(destIconsPath, 'index.ts');
-  console.log(`Writing index to ${destIndexPath}`);
-  await writeFile(destIndexPath, indexContents, 'utf8');
-}
 
 async function convertIcon(icon, iconTemplate) {
   try {
@@ -44,7 +36,7 @@ async function convertIcon(icon, iconTemplate) {
     const jsx = converter.convert(innerHTML).trim();
     const classContents = template(iconTemplate)({ name, jsx });
 
-    const destIconPath = path.resolve(destIconsPath, `${name}.tsx`);
+    const destIconPath = path.resolve(destPath, `${name}.tsx`);
     console.log(`Writing icon to ${destIconPath}`);
     await writeFile(destIconPath, classContents, 'utf8');
   } catch (e) {
@@ -52,11 +44,17 @@ async function convertIcon(icon, iconTemplate) {
   }
 }
 
+function getSvgNames(icons) {
+  return icons.map(icon => path.basename(icon, path.extname(icon)));
+}
+
 (async () => {
   const indexTemplate = await readFile(indexTemplatePath);
   const iconTemplate = await readFile(iconTemplatePath);
-  const icons = await globFiles(`${sourceIconsPath}/*.svg`, {});
-  await generateIndex(icons, indexTemplate);
+  const icons = await globFiles(`${sourcePath}/*.svg`, {});
+  const svgNames = getSvgNames(icons);
+
+  await generateIndex(svgNames, indexTemplate, destPath);
   icons.forEach((icon) => {
     convertIcon(icon, iconTemplate);
   });
