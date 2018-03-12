@@ -9,7 +9,7 @@ const SVGO = require('svgo');
 const { JSDOM } = require('jsdom');
 const HTMLtoJSX = require('htmltojsx');
 const { template } = require('lodash');
-const svgoConfig = require('./config.json');
+const svgoConfig = require('./config.illustration.json');
 
 const sourcePath = path.resolve(__dirname, '../../assets/illustrations');
 const destPath = path.resolve(__dirname, '../../src/components/Illustration/illustrations');

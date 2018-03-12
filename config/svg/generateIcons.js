@@ -9,7 +9,7 @@ const SVGO = require('svgo');
 const { JSDOM } = require('jsdom');
 const HTMLtoJSX = require('htmltojsx');
 const { template } = require('lodash');
-const svgoConfig = require('./config.json');
+const svgoConfig = require('./config.icon.json');
 
 const sourceIconsPath = path.resolve(__dirname, '../../assets/icons');
 const destIconsPath = path.resolve(__dirname, '../../src/components/Icon/icons');
