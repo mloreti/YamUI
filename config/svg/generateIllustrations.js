@@ -24,7 +24,7 @@ function getSizeFromFilePath(filePath) {
   const sizeResults = filePath.match(sizeRegex);
 
   if (sizeResults === null) {
-    console.error(`Could not determine svg size from path: ${filePath}`);
+    throw new Error(`Could not determine svg size from path: ${filePath}`);
   }
 
   return sizeResults[1];
