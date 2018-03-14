@@ -2,10 +2,7 @@
 import '../../yamui';
 import * as React from 'react';
 import { BaseComponentProps } from '../../util/BaseComponent/props';
-import { IllustrationSize } from './enums';
 import './Illustration.css';
-
-export { IllustrationSize };
 
 export interface IllustrationProps extends BaseComponentProps {
   /**
