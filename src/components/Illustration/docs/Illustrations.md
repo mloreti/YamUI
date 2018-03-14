@@ -2,7 +2,7 @@
 
 Because current bundlers do not always tree-shake properly, illustrations are exported individually, so you'll need to import each illustration separately.
 
-Many illustrations, like our file type icons, have different
+Illustrations have different sizes, so you must import the proper size for your application.
 
 ```js static
 import PDF20 from 'yamui/dist/components/Illustration/illustrations/PDF20';
@@ -20,11 +20,11 @@ const allIllustrations = require('../illustrations');
 const { GutterSize, TextSize } = require('../../Block');
 
 const illustrationsLibrary = Object.keys(allIllustrations).map((illustration) => {
-  const Icon = allIllustrations[illustration];
+  const Illustration = allIllustrations[illustration];
   return (
     <div style={{ float: 'left', width: '100px', textAlign: 'center' }} key={illustration}>
       <Block textSize={TextSize.XLARGE}>
-        <Icon />
+        <Illustration />
       </Block>
       <Block textSize={TextSize.XSMALL} bottomSpacing={GutterSize.XLARGE} ellipsis={true}>
         {illustration}

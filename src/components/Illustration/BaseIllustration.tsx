@@ -9,15 +9,16 @@ export { IllustrationSize };
 
 export interface IllustrationProps extends BaseComponentProps {
   /**
-   * Sets icon style to `display: block`. This is helpful if the inline icon's `line-height` is
-   * taller than the current line's `line-height`, and is creating extra vertical space.
+   * Sets illustration style to `display: block`. This is helpful if the inline
+   * illustration's `line-height` is taller than the current line's
+   * `line-height`, and is creating extra vertical space.
    */
   block?: boolean;
 }
 
 /**
- * An `Illustration` renders an SVG illustration. Certain illustrations, like file type icons, come in multiple
- * sizes, so you may need to import the specific sized files you'll need.
+ * An `Illustration` renders an SVG illustration. Illustrations come in multiple
+ * sizes, so you must import the proper size for your application.
  */
 export default class BaseIllustration extends React.Component<IllustrationProps> {
   protected getClassName() {
