@@ -48,7 +48,7 @@ module.exports = {
     '**/*.spec.tsx',
     '**/components/Fabric/*',
     '**/components/Icon/icons/*',
-    '**/components/Illustration/sizedIllustrations/*',
+    '**/components/Illustration/illustrations/*',
   ],
   skipComponentsWithoutExample: true,
   resolver: docgen.resolver.findAllComponentDefinitions,
