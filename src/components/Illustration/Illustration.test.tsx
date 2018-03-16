@@ -3,7 +3,7 @@ import * as React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 import { BaseIllustration, IllustrationProps } from './index';
 import * as allExportedIllustrations from './illustrations';
-import AccDB16 from './illustrations/accdb16';
+import AccDB16 from './illustrations/AccDB16';
 
 describe('<Illustration />', () => {
   let component: ShallowWrapper<IllustrationProps, {}>;
