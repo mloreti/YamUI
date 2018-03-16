@@ -18,12 +18,12 @@ export default class Spreadsheet extends BaseIllustration {
         focusable="false"
       >
         <defs>
-    <linearGradient id="a" x1="4.192" x2="31.869" y1="5.161" y2="38.145" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Spreadsheet40-a" x1="4.192" x2="31.869" y1="5.161" y2="38.145" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".862" stopColor="#5e5e5e" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="b" x1="28.727" x2="33.487" y1="15.273" y2="10.513" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Spreadsheet40-b" x1="28.727" x2="33.487" y1="15.273" y2="10.513" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".446" stopColor="#fff" stopOpacity=".008" />
       <stop offset=".636" stopColor="#fff" stopOpacity=".036" />
@@ -32,7 +32,7 @@ export default class Spreadsheet extends BaseIllustration {
       <stop offset=".993" stopColor="#fff" stopOpacity=".243" />
       <stop offset={1} stopColor="#fff" stopOpacity=".25" />
     </linearGradient>
-    <linearGradient id="c" x1={33} x2={33} y1="18.906" y2="16.088" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Spreadsheet40-c" x1={33} x2={33} y1="18.906" y2="16.088" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".862" stopColor="#303030" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
@@ -46,9 +46,9 @@ export default class Spreadsheet extends BaseIllustration {
   <path fill="#c8c8c8" d="M19 23h-6v-2h6zM19 17h-6v-2h6zM19 14h-6v-2h6zM19 20h-6v-2h6zM19 26h-6v-2h6z" />
   <path fill="#217346" d="M12 29H6v-2h6z" />
   <path fill="#c8c8c8" d="M19 29h-6v-2h6zM26 23h-6v-2h6zM26 17h-6v-2h6zM26 14h-6v-2h6zM26 20h-6v-2h6zM26 26h-6v-2h6zM26 29h-6v-2h6zM33 23h-6v-2h6zM33 20h-6v-2h6zM33 26h-6v-2h6zM33 29h-6v-2h6z" />
-  <path fill="url(#a)" d="M38 15l-8-8H2v26h36z" />
-  <path fill="url(#b)" d="M10 7v1h19v8h8v17h1V15l-8-8H10z" />
-  <path fill="url(#c)" d="M29 16h8v3h-8z" />
+  <path fill="url(#Spreadsheet40-a)" d="M38 15l-8-8H2v26h36z" />
+  <path fill="url(#Spreadsheet40-b)" d="M10 7v1h19v8h8v17h1V15l-8-8H10z" />
+  <path fill="url(#Spreadsheet40-c)" d="M29 16h8v3h-8z" />
       </svg>
     );
   }

@@ -18,17 +18,17 @@ export default class Ppsx extends BaseIllustration {
         focusable="false"
       >
         <defs>
-    <linearGradient id="a" x1="11.467" x2="63.639" y1="7.804" y2="69.981" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Ppsx72-a" x1="11.467" x2="63.639" y1="7.804" y2="69.981" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".862" stopColor="#5e5e5e" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="b" x1={57} x2={57} y1="24.844" y2="20.146" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Ppsx72-b" x1={57} x2={57} y1="24.844" y2="20.146" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".862" stopColor="#303030" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="c" x1="53.792" x2="62.501" y1="23.208" y2="14.499" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Ppsx72-c" x1="53.792" x2="62.501" y1="23.208" y2="14.499" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".446" stopColor="#fff" stopOpacity=".008" />
       <stop offset=".636" stopColor="#fff" stopOpacity=".036" />
@@ -48,9 +48,9 @@ export default class Ppsx extends BaseIllustration {
   <path fill="#f5ba9d" d="M20 21h3v10h-3z" />
   <path fill="#c8c8c8" d="M26 24h3v7h-3z" />
   <path fill="#f5ba9d" d="M32 27h3v4h-3z" />
-  <path fill="url(#a)" d="M66 18L52 4H16v64h50z" />
-  <path fill="url(#b)" d="M50 20h14v5H50z" />
-  <path fill="url(#c)" d="M66 18L52 4H16v2h34v14h14v48h2V18z" />
+  <path fill="url(#Ppsx72-a)" d="M66 18L52 4H16v64h50z" />
+  <path fill="url(#Ppsx72-b)" d="M50 20h14v5H50z" />
+  <path fill="url(#Ppsx72-c)" d="M66 18L52 4H16v2h34v14h14v48h2V18z" />
       </svg>
     );
   }

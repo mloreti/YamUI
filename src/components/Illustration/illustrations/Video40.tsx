@@ -18,12 +18,12 @@ export default class Video extends BaseIllustration {
         focusable="false"
       >
         <defs>
-    <linearGradient id="a" x1="6.162" x2="33.838" y1="3.508" y2="36.492" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Video40-a" x1="6.162" x2="33.838" y1="3.508" y2="36.492" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".862" stopColor="#5e5e5e" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="b" x1="19.027" x2="36.027" y1="20.925" y2="4.759" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Video40-b" x1="19.027" x2="36.027" y1="20.925" y2="4.759" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".446" stopColor="#fff" stopOpacity=".008" />
       <stop offset=".636" stopColor="#fff" stopOpacity=".036" />
@@ -33,8 +33,8 @@ export default class Video extends BaseIllustration {
       <stop offset={1} stopColor="#fff" stopOpacity=".25" />
     </linearGradient>
   </defs>
-  <path fill="url(#a)" d="M2 7h36v26H2z" />
-  <path fill="url(#b)" d="M38 7H2v1h35v25h1V7z" />
+  <path fill="url(#Video40-a)" d="M2 7h36v26H2z" />
+  <path fill="url(#Video40-b)" d="M38 7H2v1h35v25h1V7z" />
   <path fill="#fff" d="M3 8h34v24H3z" />
   <path fill="#949494" d="M2 7v26h36V7zm35 25H3V8h34z" />
   <path fill="#69afe5" d="M15 14v12l11-6-11-6z" />

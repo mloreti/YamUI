@@ -18,17 +18,17 @@ export default class Sway extends BaseIllustration {
         focusable="false"
       >
         <defs>
-    <linearGradient id="a" x1="6.099" x2="35.395" y1="4.434" y2="39.347" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Sway40-a" x1="6.099" x2="35.395" y1="4.434" y2="39.347" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".862" stopColor="#5e5e5e" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="b" x1={32} x2={32} y1="13.906" y2="11.088" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Sway40-b" x1={32} x2={32} y1="13.906" y2="11.088" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".862" stopColor="#303030" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="c" x1="26.792" x2="31.73" y1="9.708" y2="4.77" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Sway40-c" x1="26.792" x2="31.73" y1="9.708" y2="4.77" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".446" stopColor="#fff" stopOpacity=".008" />
       <stop offset=".636" stopColor="#fff" stopOpacity=".036" />
@@ -37,11 +37,11 @@ export default class Sway extends BaseIllustration {
       <stop offset=".993" stopColor="#fff" stopOpacity=".243" />
       <stop offset={1} stopColor="#fff" stopOpacity=".25" />
     </linearGradient>
-    <linearGradient id="d" x1="14.278" x2="14.657" y1="36.941" y2="33.377" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Sway40-d" x1="14.278" x2="14.657" y1="36.941" y2="33.377" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".997" stopOpacity=".2" />
     </linearGradient>
-    <linearGradient id="e" x1="11.5" x2="11.5" y1="32.792" y2="12.217" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Sway40-e" x1="11.5" x2="11.5" y1="32.792" y2="12.217" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".526" stopColor="#fff" stopOpacity=".007" />
       <stop offset=".715" stopColor="#fff" stopOpacity=".034" />
@@ -58,11 +58,11 @@ export default class Sway extends BaseIllustration {
   <path fill="#99cdc7" d="M28 19l-5 5h10l-5-5z" />
   <path fill="#c8c8c8" d="M20 26h6v1h-6zM20 32h6v1h-6zM27 26h6v1h-6zM20 29h6v1h-6zM27 29h6v1h-6zM27 32h6v1h-6z" />
   <rect width={3} height={3} x={30} y={14} fill="#99cdc7" rx="1.5" ry="1.5" />
-  <path fill="url(#a)" d="M29 2H9v10.294L3 13v19l6 .706V38h28V10z" />
-  <path fill="url(#b)" d="M28 11h8v3h-8z" />
-  <path fill="url(#c)" d="M29 2H9v1h19v8h8v14h1V10l-8-8z" />
-  <path fill="url(#d)" d="M20 37H9v-4.29L20 34v3z" />
-  <path fill="url(#e)" d="M20 34L3 32V13l17-2v23z" />
+  <path fill="url(#Sway40-a)" d="M29 2H9v10.294L3 13v19l6 .706V38h28V10z" />
+  <path fill="url(#Sway40-b)" d="M28 11h8v3h-8z" />
+  <path fill="url(#Sway40-c)" d="M29 2H9v1h19v8h8v14h1V10l-8-8z" />
+  <path fill="url(#Sway40-d)" d="M20 37H9v-4.29L20 34v3z" />
+  <path fill="url(#Sway40-e)" d="M20 34L3 32V13l17-2v23z" />
       </svg>
     );
   }

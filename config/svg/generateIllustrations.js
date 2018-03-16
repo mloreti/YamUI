@@ -17,8 +17,6 @@ const svgTemplatePath = path.resolve(__dirname, 'illustrationTemplate.ejs');
 const readFile = util.promisify(fs.readFile);
 const globFiles = util.promisify(glob);
 
-const optimizer = new SVGO(svgoConfig);
-
 function getSizeFromFilePath(filePath) {
   const sizeRegex = /.+\/(\d+)\/.+\.svg/;
   const sizeResults = filePath.match(sizeRegex);
@@ -50,6 +48,11 @@ function getSvgNames(illustrations) {
     const templateData = { size };
     const name = path.basename(svg, path.extname(svg));
     const destFilePath = path.resolve(destPath, `${name}${size}.tsx`);
+    const svgoConfigExtension = {"cleanupIDs" : {"prefix": `${name}${size}-` }};
+    const svgoFileConfig = svgoConfig;
+    svgoFileConfig.plugins.push(svgoConfigExtension);         
+    const optimizer = new SVGO(svgoFileConfig);
+
     generateComponent(svg, svgTemplate, templateData, destFilePath, optimizer);
   });
 })();

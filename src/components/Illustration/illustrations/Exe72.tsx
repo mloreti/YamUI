@@ -18,12 +18,12 @@ export default class Exe extends BaseIllustration {
         focusable="false"
       >
         <defs>
-    <linearGradient id="a" x1="12.987" x2="59.115" y1="8.574" y2="63.547" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Exe72-a" x1="12.987" x2="59.115" y1="8.574" y2="63.547" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".862" stopColor="#5e5e5e" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="b" x1="35.141" x2="63.97" y1="36.838" y2="8.696" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Exe72-b" x1="35.141" x2="63.97" y1="36.838" y2="8.696" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".446" stopColor="#fff" stopOpacity=".008" />
       <stop offset=".636" stopColor="#fff" stopOpacity=".036" />
@@ -40,8 +40,8 @@ export default class Exe extends BaseIllustration {
   <path fill="#949494" d="M62 15h2v2h-2zm-4 0h2v2h-2zM5 15h51v2H5z" />
   <path fill="#eaeaea" d="M6 17h12v40H6z" />
   <path fill="#c8c8c8" d="M9 22h6v2H9zm0 5h6v2H9zm0 5h6v2H9zm0 5h6v2H9z" />
-  <path fill="url(#a)" d="M4 13h64v46H4z" />
-  <path fill="url(#b)" d="M68 13H4v4h52v-2h2v2h2v-2h2v2h2v-2h2v44h2V13z" />
+  <path fill="url(#Exe72-a)" d="M4 13h64v46H4z" />
+  <path fill="url(#Exe72-b)" d="M68 13H4v4h52v-2h2v2h2v-2h2v2h2v-2h2v44h2V13z" />
       </svg>
     );
   }

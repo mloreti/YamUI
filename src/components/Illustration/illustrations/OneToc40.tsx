@@ -18,16 +18,16 @@ export default class OneToc extends BaseIllustration {
         focusable="false"
       >
         <defs>
-    <linearGradient id="b" x1="7.577" x2="35.633" y1="3.194" y2="36.63" gradientUnits="userSpaceOnUse">
+    <linearGradient id="OneToc40-b" x1="7.577" x2="35.633" y1="3.194" y2="36.63" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".862" stopColor="#5e5e5e" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="c" x1="14.278" x2="14.657" y1="36.941" y2="33.377" gradientUnits="userSpaceOnUse">
+    <linearGradient id="OneToc40-c" x1="14.278" x2="14.657" y1="36.941" y2="33.377" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".997" stopOpacity=".2" />
     </linearGradient>
-    <linearGradient id="d" x1="11.5" x2="11.5" y1="32.792" y2="12.217" gradientUnits="userSpaceOnUse">
+    <linearGradient id="OneToc40-d" x1="11.5" x2="11.5" y1="32.792" y2="12.217" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".526" stopColor="#fff" stopOpacity=".007" />
       <stop offset=".715" stopColor="#fff" stopOpacity=".034" />
@@ -35,13 +35,13 @@ export default class OneToc extends BaseIllustration {
       <stop offset=".959" stopColor="#fff" stopOpacity=".146" />
       <stop offset={1} stopColor="#fff" stopOpacity=".18" />
     </linearGradient>
-    <linearGradient id="a" x1="36.906" x2="33.992" y1={16} y2={16} gradientUnits="userSpaceOnUse">
+    <linearGradient id="OneToc40-a" x1="36.906" x2="33.992" y1={16} y2={16} gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#a6a6a6" stopOpacity={0} />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="e" x1="36.906" x2="33.992" y1={23} y2={23} xlinkHref="#a" />
-    <linearGradient id="f" x1="36.906" x2="33.992" y1={30} y2={30} xlinkHref="#a" />
-    <linearGradient id="g" x1="29.344" x2="38.172" y1="12.156" y2="3.328" gradientUnits="userSpaceOnUse">
+    <linearGradient id="OneToc40-e" x1="36.906" x2="33.992" y1={23} y2={23} xlinkHref="#OneToc40-a" />
+    <linearGradient id="OneToc40-f" x1="36.906" x2="33.992" y1={30} y2={30} xlinkHref="#OneToc40-a" />
+    <linearGradient id="OneToc40-g" x1="29.344" x2="38.172" y1="12.156" y2="3.328" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".446" stopColor="#fff" stopOpacity=".008" />
       <stop offset=".636" stopColor="#fff" stopOpacity=".036" />
@@ -64,13 +64,13 @@ export default class OneToc extends BaseIllustration {
   <rect width={4} height={1} x={6} y={3} fill="#949494" rx=".5" ry=".5" />
   <rect width={4} height={1} x={6} y={36} fill="#949494" rx=".5" ry=".5" />
   <rect width={4} height={1} x={6} y={33} fill="#949494" rx=".5" ry=".5" />
-  <path fill="url(#b)" d="M34 2H9v10.294L3 13v19l6 .706V38h25V12h3V4h-3z" />
-  <path fill="url(#c)" d="M20 37H9v-4.29L20 34v3z" />
-  <path fill="url(#d)" d="M20 34L3 32V13l17-2v23z" />
-  <path fill="url(#a)" d="M34 13h3v6h-3z" />
-  <path fill="url(#e)" d="M34 20h3v6h-3z" />
-  <path fill="url(#f)" d="M34 27h3v6h-3z" />
-  <path fill="url(#g)" d="M33 3v2h3v6h-3v26H10V3h23m1-1H9v36h25V12h3V4h-3V2z" />
+  <path fill="url(#OneToc40-b)" d="M34 2H9v10.294L3 13v19l6 .706V38h25V12h3V4h-3z" />
+  <path fill="url(#OneToc40-c)" d="M20 37H9v-4.29L20 34v3z" />
+  <path fill="url(#OneToc40-d)" d="M20 34L3 32V13l17-2v23z" />
+  <path fill="url(#OneToc40-a)" d="M34 13h3v6h-3z" />
+  <path fill="url(#OneToc40-e)" d="M34 20h3v6h-3z" />
+  <path fill="url(#OneToc40-f)" d="M34 27h3v6h-3z" />
+  <path fill="url(#OneToc40-g)" d="M33 3v2h3v6h-3v26H10V3h23m1-1H9v36h25V12h3V4h-3V2z" />
       </svg>
     );
   }

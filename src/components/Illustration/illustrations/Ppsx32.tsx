@@ -18,12 +18,12 @@ export default class Ppsx extends BaseIllustration {
         focusable="false"
       >
         <defs>
-    <linearGradient id="a" x1="5.084" x2="27.961" y1="3.608" y2="30.872" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Ppsx32-a" x1="5.084" x2="27.961" y1="3.608" y2="30.872" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".862" stopColor="#5e5e5e" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="b" x1="22.148" x2="26.114" y1="9.102" y2="5.136" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Ppsx32-b" x1="22.148" x2="26.114" y1="9.102" y2="5.136" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".446" stopColor="#fff" stopOpacity=".008" />
       <stop offset=".636" stopColor="#fff" stopOpacity=".036" />
@@ -32,7 +32,7 @@ export default class Ppsx extends BaseIllustration {
       <stop offset=".993" stopColor="#fff" stopOpacity=".243" />
       <stop offset={1} stopColor="#fff" stopOpacity=".25" />
     </linearGradient>
-    <linearGradient id="c" x1={25} x2={25} y1="10.938" y2="9.058" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Ppsx32-c" x1={25} x2={25} y1="10.938" y2="9.058" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".862" stopColor="#303030" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
@@ -49,9 +49,9 @@ export default class Ppsx extends BaseIllustration {
   <path fill="#c8c8c8" d="M11 10h1v4h-1z" />
   <path fill="#f5ba9d" d="M13 11h1v3h-1z" />
   <path fill="#c8c8c8" d="M15 12h1v2h-1z" />
-  <path fill="url(#a)" d="M29 8l-6-6H7v28h22z" />
-  <path fill="url(#b)" d="M7 2v1h15v6h6v15.5h1V8l-6-6H7z" />
-  <path fill="url(#c)" d="M22 9h6v2h-6z" />
+  <path fill="url(#Ppsx32-a)" d="M29 8l-6-6H7v28h22z" />
+  <path fill="url(#Ppsx32-b)" d="M7 2v1h15v6h6v15.5h1V8l-6-6H7z" />
+  <path fill="url(#Ppsx32-c)" d="M22 9h6v2h-6z" />
       </svg>
     );
   }

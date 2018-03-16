@@ -18,12 +18,12 @@ export default class Vstx extends BaseIllustration {
         focusable="false"
       >
         <defs>
-    <linearGradient id="b" x1={23} x2={23} y1="37.906" y2="35.088" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Vstx40-b" x1={23} x2={23} y1="37.906" y2="35.088" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".862" stopColor="#303030" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="c" x1="11.5" x2="11.5" y1="32.792" y2="12.217" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Vstx40-c" x1="11.5" x2="11.5" y1="32.792" y2="12.217" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".526" stopColor="#fff" stopOpacity=".007" />
       <stop offset=".715" stopColor="#fff" stopOpacity=".034" />
@@ -31,7 +31,7 @@ export default class Vstx extends BaseIllustration {
       <stop offset=".959" stopColor="#fff" stopOpacity=".146" />
       <stop offset={1} stopColor="#fff" stopOpacity=".18" />
     </linearGradient>
-    <linearGradient id="d" x1="22.91" x2="23.134" y1="6.219" y2="1.95" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Vstx40-d" x1="22.91" x2="23.134" y1="6.219" y2="1.95" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".446" stopColor="#fff" stopOpacity=".008" />
       <stop offset=".636" stopColor="#fff" stopOpacity=".036" />
@@ -40,13 +40,13 @@ export default class Vstx extends BaseIllustration {
       <stop offset=".993" stopColor="#fff" stopOpacity=".243" />
       <stop offset={1} stopColor="#fff" stopOpacity=".25" />
     </linearGradient>
-    <linearGradient id="a" x1="19.126" x2="36.758" y1="15.621" y2="38.189" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Vstx40-a" x1="19.126" x2="36.758" y1="15.621" y2="38.189" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".862" stopColor="#5e5e5e" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="e" x1="9.97" x2="33.03" y1="6.242" y2="35.758" xlinkHref="#a" />
-    <linearGradient id="f" x1="14.307" x2="14.657" y1="36.672" y2="33.372" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Vstx40-e" x1="9.97" x2="33.03" y1="6.242" y2="35.758" xlinkHref="#Vstx40-a" />
+    <linearGradient id="Vstx40-f" x1="14.307" x2="14.657" y1="36.672" y2="33.372" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".997" stopOpacity=".2" />
     </linearGradient>
@@ -68,12 +68,12 @@ export default class Vstx extends BaseIllustration {
   <circle cx="30.5" cy="17.5" r=".5" fill="#c8c8c8" />
   <circle cx="30.5" cy="14.5" r=".5" fill="#c8c8c8" />
   <path fill="#fff" d="M16 18l-3.298 9h-2.444L7 18h2.323l1.997 6.264a4.26 4.26 0 0 1 .193.897h.04a4.802 4.802 0 0 1 .207-.923L13.743 18z" />
-  <path fill="url(#b)" d="M12 35h22v3H12z" />
-  <path fill="url(#c)" d="M20 34L3 32V13l17-2v23z" />
-  <path fill="url(#d)" d="M34 2H9v5h25V4l3 3V5l-3-3z" />
-  <path fill="url(#a)" d="M34 4v31H12v3h25V7l-3-3z" />
-  <path fill="url(#e)" d="M9 7v28h25V7H9z" />
-  <path fill="url(#f)" d="M20 37h-8v-2H9v-2.29L20 34v3z" />
+  <path fill="url(#Vstx40-b)" d="M12 35h22v3H12z" />
+  <path fill="url(#Vstx40-c)" d="M20 34L3 32V13l17-2v23z" />
+  <path fill="url(#Vstx40-d)" d="M34 2H9v5h25V4l3 3V5l-3-3z" />
+  <path fill="url(#Vstx40-a)" d="M34 4v31H12v3h25V7l-3-3z" />
+  <path fill="url(#Vstx40-e)" d="M9 7v28h25V7H9z" />
+  <path fill="url(#Vstx40-f)" d="M20 37h-8v-2H9v-2.29L20 34v3z" />
       </svg>
     );
   }

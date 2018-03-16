@@ -18,13 +18,13 @@ export default class Vstx extends BaseIllustration {
         focusable="false"
       >
         <defs>
-    <linearGradient id="a" x1="15.172" x2="28.544" y1="13.241" y2="30.356" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Vstx32-a" x1="15.172" x2="28.544" y1="13.241" y2="30.356" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".862" stopColor="#5e5e5e" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="b" x1="7.873" x2="26.127" y1="5.318" y2="28.682" xlinkHref="#a" />
-    <linearGradient id="c" x1="9.5" x2="9.5" y1="26.438" y2="9.525" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Vstx32-b" x1="7.873" x2="26.127" y1="5.318" y2="28.682" xlinkHref="#Vstx32-a" />
+    <linearGradient id="Vstx32-c" x1="9.5" x2="9.5" y1="26.438" y2="9.525" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".526" stopColor="#fff" stopOpacity=".007" />
       <stop offset=".715" stopColor="#fff" stopOpacity=".034" />
@@ -32,12 +32,12 @@ export default class Vstx extends BaseIllustration {
       <stop offset=".959" stopColor="#fff" stopOpacity=".146" />
       <stop offset={1} stopColor="#fff" stopOpacity=".18" />
     </linearGradient>
-    <linearGradient id="d" x1="11.282" x2="11.617" y1="29.352" y2="26.212" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Vstx32-d" x1="11.282" x2="11.617" y1="29.352" y2="26.212" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".862" stopColor="#303030" stopOpacity=".126" />
       <stop offset={1} stopOpacity=".2" />
     </linearGradient>
-    <linearGradient id="e" x1="17.918" x2="18.128" y1="5.563" y2="1.548" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Vstx32-e" x1="17.918" x2="18.128" y1="5.563" y2="1.548" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".446" stopColor="#fff" stopOpacity=".008" />
       <stop offset=".636" stopColor="#fff" stopOpacity=".036" />
@@ -46,7 +46,7 @@ export default class Vstx extends BaseIllustration {
       <stop offset=".993" stopColor="#fff" stopOpacity=".243" />
       <stop offset={1} stopColor="#fff" stopOpacity=".25" />
     </linearGradient>
-    <linearGradient id="f" x1={18} x2={18} y1="29.938" y2="28.058" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Vstx32-f" x1={18} x2={18} y1="29.938" y2="28.058" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".862" stopColor="#303030" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
@@ -59,12 +59,12 @@ export default class Vstx extends BaseIllustration {
   <path fill="#fff" d="M13 14l-2.565 8h-1.9L6 14h1.807l1.553 5.568a4.25 4.25 0 0 1 .15.797h.032a4.804 4.804 0 0 1 .16-.82L11.246 14z" />
   <path fill="#3955a3" d="M27 2H7v4h20V4l2 2V4l-2-2z" />
   <path fill="#c8c8c8" d="M10.5 7a.5.5 0 1 0 .5.5.5.5 0 0 0-.5-.5zM13.5 7a.5.5 0 1 0 .5.5.5.5 0 0 0-.5-.5zM16.5 7a.5.5 0 1 0 .5.5.5.5 0 0 0-.5-.5zM19.5 7a.5.5 0 1 0 .5.5.5.5 0 0 0-.5-.5zM24.5 14a.5.5 0 1 0 .5.5.5.5 0 0 0-.5-.5zM24.5 11a.5.5 0 1 0 .5.5.5.5 0 0 0-.5-.5zM24.5 17a.5.5 0 1 0 .5.5.5.5 0 0 0-.5-.5zM18.5 24a.5.5 0 1 0 .5.5.5.5 0 0 0-.5-.5z" />
-  <path fill="url(#a)" d="M9 28v2h20V7l-1-1V5l-1-1v24H9z" />
-  <path fill="url(#b)" d="M8.111 28H27V6H7v22h1.111z" />
-  <path fill="url(#c)" d="M16 9L3 11v14l13 2V9z" />
-  <path fill="url(#d)" d="M16 29H7v-3.38L16 27v2z" />
-  <path fill="url(#e)" d="M27 2H7v4h20V4l2 2V4l-2-2z" />
-  <path fill="url(#f)" d="M9 28h18v2H9z" />
+  <path fill="url(#Vstx32-a)" d="M9 28v2h20V7l-1-1V5l-1-1v24H9z" />
+  <path fill="url(#Vstx32-b)" d="M8.111 28H27V6H7v22h1.111z" />
+  <path fill="url(#Vstx32-c)" d="M16 9L3 11v14l13 2V9z" />
+  <path fill="url(#Vstx32-d)" d="M16 29H7v-3.38L16 27v2z" />
+  <path fill="url(#Vstx32-e)" d="M27 2H7v4h20V4l2 2V4l-2-2z" />
+  <path fill="url(#Vstx32-f)" d="M9 28h18v2H9z" />
       </svg>
     );
   }

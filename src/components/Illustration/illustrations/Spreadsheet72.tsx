@@ -18,12 +18,12 @@ export default class Spreadsheet extends BaseIllustration {
         focusable="false"
       >
         <defs>
-    <linearGradient id="a" x1="-2967.953" x2="-2917.433" y1="-2966.005" y2="-2905.798" gradientTransform="matrix(0 -1 -1 0 -2903 -2903)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Spreadsheet72-a" x1="-2967.953" x2="-2917.433" y1="-2966.005" y2="-2905.798" gradientTransform="matrix(0 -1 -1 0 -2903 -2903)" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".862" stopColor="#5e5e5e" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="b" x1="-2927.541" x2="-2918.999" y1="-2950.459" y2="-2959.001" gradientTransform="matrix(0 -1 -1 0 -2903 -2903)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Spreadsheet72-b" x1="-2927.541" x2="-2918.999" y1="-2950.459" y2="-2959.001" gradientTransform="matrix(0 -1 -1 0 -2903 -2903)" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".446" stopColor="#fff" stopOpacity=".008" />
       <stop offset=".636" stopColor="#fff" stopOpacity=".036" />
@@ -32,7 +32,7 @@ export default class Spreadsheet extends BaseIllustration {
       <stop offset=".993" stopColor="#fff" stopOpacity=".243" />
       <stop offset={1} stopColor="#fff" stopOpacity=".25" />
     </linearGradient>
-    <linearGradient id="c" x1={-497} x2={-497} y1="37.344" y2="32.646" gradientTransform="matrix(-1 0 0 1 -438.5 -2.5)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Spreadsheet72-c" x1={-497} x2={-497} y1="37.344" y2="32.646" gradientTransform="matrix(-1 0 0 1 -438.5 -2.5)" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".862" stopColor="#303030" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
@@ -44,9 +44,9 @@ export default class Spreadsheet extends BaseIllustration {
   <path fill="#fff" d="M53 28V16l12 12H53z" />
   <path fill="#217346" d="M10 50h10v3H10zm0-6h10v3H10zm0-6h10v3H10zm0-6h10v3H10zm0-6h10v3H10zm0-6h10v3H10z" />
   <path fill="#c8c8c8" d="M23 50h10v3H23zm0-6h10v3H23zm0-6h10v3H23zm0-6h10v3H23zm0-6h10v3H23zm0-6h10v3H23zm13 30h10v3H36zm0-6h10v3H36zm0-6h10v3H36zm0-6h10v3H36zm0-6h10v3H36zm0-6h10v3H36zm13 30h10v3H49zm0-6h10v3H49zm0-6h10v3H49zm0-6h10v3H49z" />
-  <path fill="url(#a)" d="M4 13v46h64V28L53 13z" />
-  <path fill="url(#b)" d="M53 13l15 15v31h-2V30H51V15H4v-2h49z" />
-  <path fill="url(#c)" d="M51 30h15v5H51z" />
+  <path fill="url(#Spreadsheet72-a)" d="M4 13v46h64V28L53 13z" />
+  <path fill="url(#Spreadsheet72-b)" d="M53 13l15 15v31h-2V30H51V15H4v-2h49z" />
+  <path fill="url(#Spreadsheet72-c)" d="M51 30h15v5H51z" />
       </svg>
     );
   }

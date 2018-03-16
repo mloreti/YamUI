@@ -18,17 +18,17 @@ export default class Model extends BaseIllustration {
         focusable="false"
       >
         <defs>
-    <linearGradient id="a" x1="4.587" x2="38.489" y1="5.864" y2="46.268" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Model48-a" x1="4.587" x2="38.489" y1="5.864" y2="46.268" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".862" stopColor="#5e5e5e" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="b" x1={34} x2={34} y1="16.906" y2="14.088" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Model48-b" x1={34} x2={34} y1="16.906" y2="14.088" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".862" stopColor="#303030" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="c" x1="28.92" x2="37.48" y1="19.08" y2="10.52" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Model48-c" x1="28.92" x2="37.48" y1="19.08" y2="10.52" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".446" stopColor="#fff" stopOpacity=".008" />
       <stop offset=".636" stopColor="#fff" stopOpacity=".036" />
@@ -46,9 +46,9 @@ export default class Model extends BaseIllustration {
   <path fill="#deecf9" d="M24 28v12l-9-3V25l9 3z" />
   <path fill="#69afe5" d="M24 40l-9-3 9-3v6z" />
   <path fill="#005a9e" d="M24 40v-6l9 3-9 3z" />
-  <path fill="url(#a)" d="M40 13L30 3H8v42h32z" />
-  <path fill="url(#b)" d="M29 14h10v3H29z" />
-  <path fill="url(#c)" d="M8 3v1h21v10h10v31h1V13L30 3H8z" />
+  <path fill="url(#Model48-a)" d="M40 13L30 3H8v42h32z" />
+  <path fill="url(#Model48-b)" d="M29 14h10v3H29z" />
+  <path fill="url(#Model48-c)" d="M8 3v1h21v10h10v31h1V13L30 3H8z" />
       </svg>
     );
   }

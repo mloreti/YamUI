@@ -18,17 +18,17 @@ export default class Rtf extends BaseIllustration {
         focusable="false"
       >
         <defs>
-    <linearGradient id="a" x1="6.467" x2="58.639" y1="7.804" y2="69.981" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Rtf72-a" x1="6.467" x2="58.639" y1="7.804" y2="69.981" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".862" stopColor="#5e5e5e" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="b" x1={52} x2={52} y1="24.844" y2="20.146" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Rtf72-b" x1={52} x2={52} y1="24.844" y2="20.146" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#828282" stopOpacity={0} />
       <stop offset=".862" stopColor="#303030" stopOpacity=".063" />
       <stop offset={1} stopOpacity=".1" />
     </linearGradient>
-    <linearGradient id="c" x1="48.792" x2="57.501" y1="23.208" y2="14.499" gradientUnits="userSpaceOnUse">
+    <linearGradient id="Rtf72-c" x1="48.792" x2="57.501" y1="23.208" y2="14.499" gradientUnits="userSpaceOnUse">
       <stop offset={0} stopColor="#fff" stopOpacity={0} />
       <stop offset=".446" stopColor="#fff" stopOpacity=".008" />
       <stop offset=".636" stopColor="#fff" stopOpacity=".036" />
@@ -45,9 +45,9 @@ export default class Rtf extends BaseIllustration {
   <path fill="#0078d7" d="M18 30h36v2H18z" />
   <path fill="#c8c8c8" d="M18 35h17v2H18zm0 5h17v2H18zm0 5h17v2H18zm0 5h36v2H18zm0 5h36v2H18z" />
   <path fill="#69afe5" d="M34 20h6v2h-6z" />
-  <path fill="url(#a)" d="M61 18L47 4H11v64h50z" />
-  <path fill="url(#b)" d="M45 20h14v5H45z" />
-  <path fill="url(#c)" d="M61 18L47 4H11v2h34v14h14v48h2V18z" />
+  <path fill="url(#Rtf72-a)" d="M61 18L47 4H11v64h50z" />
+  <path fill="url(#Rtf72-b)" d="M45 20h14v5H45z" />
+  <path fill="url(#Rtf72-c)" d="M61 18L47 4H11v2h34v14h14v48h2V18z" />
       </svg>
     );
   }
