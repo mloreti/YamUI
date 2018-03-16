@@ -5,7 +5,7 @@
 import * as React from 'react';
 import BaseIllustration from '../BaseIllustration';
 
-export default class Accdb extends BaseIllustration {
+export default class AccDB extends BaseIllustration {
   render() {
     return (
       <svg
