@@ -64,15 +64,7 @@ const ImageWidthMap = {
  */
 export default class MediaObject extends React.Component<MediaObjectProps> {
   public render() {
-    const {
-      size,
-      imageContent,
-      titleContent,
-      metadataContent,
-      extraContent,
-      children,
-      allowTextWrap,
-    } = this.props;
+    const { size, imageContent, titleContent, metadataContent, extraContent, children, allowTextWrap } = this.props;
 
     const gutterSize = this.getGutterSize();
     const imageColumnClass = `y-media-object__size-${size}--image`;

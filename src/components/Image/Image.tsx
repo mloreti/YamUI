@@ -70,14 +70,7 @@ export default class Image extends React.Component<ImageProps> {
   };
 
   public render() {
-    const {
-      description,
-      fullWidth,
-      imageFit,
-      source,
-      shouldFadeIn,
-      onLoadingStateChange,
-    } = this.props;
+    const { description, fullWidth, imageFit, source, shouldFadeIn, onLoadingStateChange } = this.props;
 
     let height = this.props.height;
     let width: number | string | undefined = this.props.width;

@@ -27,9 +27,7 @@ describe('keyboardNavigation', () => {
 
   describe('subscribe()', () => {
     beforeEach(() => {
-      jest
-        .spyOn(KeyboardNavigationEventListener.prototype, 'subscribe')
-        .mockImplementation(cb => cb('new fake mode'));
+      jest.spyOn(KeyboardNavigationEventListener.prototype, 'subscribe').mockImplementation(cb => cb('new fake mode'));
       subscribe(callback);
     });
 
