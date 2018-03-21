@@ -110,7 +110,7 @@ const { SpinnerColor, SpinnerSize } = require('.');
 
 With isCentered:
 
-```js { "props": { "data-example": "centered" } }
+```js { "props": { "data-description": "centered" } }
 
 <div>
   <div>

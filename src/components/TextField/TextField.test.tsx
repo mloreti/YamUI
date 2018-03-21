@@ -24,6 +24,7 @@ describe('<TextField />', () => {
         <TextField
           prefix="PREFIX"
           suffix="SUFFIX"
+          maxLength={100}
           underlined={true}
           className="CLASS"
           value="VALUE"

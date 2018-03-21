@@ -6,7 +6,7 @@ Add here any notes on how to use the component, or delete this section.
 
 Basic usage:
 
-```js { "props": { "data-example": "basic" } }
+```js { "props": { "data-description": "basic" } }
 <PreviewCard
   name="Filename.gif"
   description="this is the file description"
@@ -16,7 +16,7 @@ Basic usage:
 
 With editable description:
 
-```js { "props": { "data-example": "editable description" } }
+```js { "props": { "data-description": "editable description" } }
 <PreviewCard
   name="Filename.gif"
   description="this is the file description"
@@ -28,7 +28,7 @@ With editable description:
 
 With remove button:
 
-```js { "props": { "data-example": "remove button" } }
+```js { "props": { "data-description": "remove button" } }
 <PreviewCard
   name="Filename.gif"
   description="this is the file description"
@@ -40,7 +40,7 @@ With remove button:
 
 With loading state:
 
-```js { "props": { "data-example": "loading state" } }
+```js { "props": { "data-description": "loading state" } }
 <PreviewCard
   name="Yammer.com"
   imageUrl="user.png"
@@ -51,7 +51,7 @@ With loading state:
 
 With loading state and progress:
 
-```js { "props": { "data-example": "loading with progress" } }
+```js { "props": { "data-description": "loading with progress" } }
 <PreviewCard
   name="Yammer.com"
   description="Uploading (3.4MB)"
@@ -64,7 +64,7 @@ With loading state and progress:
 
 Editable with an onClick handler:
 
-```js { "props": { "data-example": "editable with onclick" } }
+```js { "props": { "data-description": "editable with onclick" } }
 <PreviewCard
   name="sunset.jpg"
   description="nice pic of a sunset i took in hawaii"

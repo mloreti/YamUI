@@ -4,7 +4,6 @@ import * as React from 'react';
 import { BaseComponentProps } from '../../util/BaseComponent/props';
 import Clickable from '../Clickable';
 import EditIcon from '../Icon/icons/Edit';
-import Text, { TextColor } from '../Text';
 import TextField, { ITextField } from '../TextField';
 import { KeyCodes } from '../../util/enums';
 import './EditableText.css';
@@ -74,6 +73,7 @@ export default class EditableText extends React.Component<EditableTextProps, Edi
       return (
         <div className="y-editableText">
           <TextField
+            className="y-editableText--textfield"
             underlined={true}
             onChange={this.updateInternalEditedDescription}
             value={editedValue}
@@ -88,11 +88,16 @@ export default class EditableText extends React.Component<EditableTextProps, Edi
     }
 
     return (
-      <Text className="y-editableText" color={TextColor.METADATA}>
-        <Clickable onClick={this.handleEditClick} unstyled={true} className="y-editableText--clickable">
+      <span className="y-editableText">
+        <Clickable
+          onClick={this.handleEditClick}
+          unstyled={true}
+          className="y-editableText--clickable"
+          ariaLabel={promptText}
+        >
           <EditIcon /> <span className="y-editableText--clickableText">{text || promptText}</span>
         </Clickable>
-      </Text>
+      </span>
     );
   }
 

@@ -17,7 +17,7 @@ import './PreviewCard.css';
 
 export interface PreviewCardProps extends BaseComponentProps {
   /**
-   * Triggered when the PreviewCard is clicked, not including clicks on the Remove icon
+   * Triggered when the PreviewCard is clicked. This will not be triggered for clicks on the Remove icon
    * or to edit the description.
    */
   onClick?: (() => void);
@@ -29,6 +29,10 @@ export interface PreviewCardProps extends BaseComponentProps {
    * Triggered when the Remove icon is clicked.
    */
   onRemoveClick?: (() => void);
+
+  /**
+   * Alt text for the Remove button
+   */
   removeAltText?: string;
   /**
    * Returns the new description string when updated.
@@ -97,7 +101,6 @@ export default class PreviewCard extends React.Component<PreviewCardProps, Previ
   }
 
   public render() {
-    const { onClick } = this.props;
     const mediaObjectProps: MediaObjectProps = {
       size: MediaObjectSize.MEDIUM,
       className: 'y-previewCard--media',
@@ -107,20 +110,12 @@ export default class PreviewCard extends React.Component<PreviewCardProps, Previ
     };
 
     return (
-      <Box className={this.getClasses()} onClick={onClick}>
+      <Box className={join(['y-previewCard', this.props.className])} onClick={this.props.onClick}>
         <MediaObject {...mediaObjectProps} />
         {this.getRemoveButton()}
         {this.getProgressIndicator()}
       </Box>
     );
-  }
-
-  private getClasses() {
-    const classes = ['y-previewCard', this.props.className];
-    if (this.props.onClick) {
-      classes.push('y-previewCard__hasClick');
-    }
-    return join(classes);
   }
 
   private getNameContent() {
@@ -141,12 +136,7 @@ export default class PreviewCard extends React.Component<PreviewCardProps, Previ
     if (onRemoveClick) {
       return (
         <span className="y-previewCard--remove">
-          <Clickable
-            onClick={this.handleRemoveClick}
-            unstyled={true}
-            ariaLabel={removeAltText}
-            block={true}
-          >
+          <Clickable onClick={this.handleRemoveClick} unstyled={true} ariaLabel={removeAltText} block={true}>
             <Block padding={GutterSize.SMALL}>
               <RemoveIcon size={IconSize.XSMALL} block={true} />
             </Block>
@@ -196,12 +186,7 @@ export default class PreviewCard extends React.Component<PreviewCardProps, Previ
   }
 
   private getEditableText() {
-    const {
-      description,
-      descriptionMaxLength,
-      emptyEditableDescriptionText,
-      onDescriptionChange,
-    } = this.props;
+    const { description, descriptionMaxLength, emptyEditableDescriptionText, onDescriptionChange } = this.props;
     const push = this.state.isEditing ? -3 : 0;
 
     return (
@@ -223,11 +208,7 @@ export default class PreviewCard extends React.Component<PreviewCardProps, Previ
     const { loadingText } = this.props;
     return (
       <Block textColor={TextColor.METADATA} className="y-previewCard--spinner">
-        <Spinner
-          text={loadingText as string}
-          size={SpinnerSize.XSMALL}
-          color={SpinnerColor.METADATA}
-        />
+        <Spinner text={loadingText as string} size={SpinnerSize.XSMALL} color={SpinnerColor.METADATA} />
       </Block>
     );
   }

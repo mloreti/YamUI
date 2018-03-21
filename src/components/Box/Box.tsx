@@ -16,14 +16,22 @@ export interface BoxProps extends NestableBaseComponentProps {
  */
 export default class Box extends React.Component<BoxProps> {
   public render() {
-    const { children, className, onClick } = this.props;
+    const { children, onClick } = this.props;
 
     return (
-      <div className={join(['y-box', className])} onClick={onClick} role={onClick ? 'button' : undefined}>
+      <div className={this.getClasses()} onClick={onClick} role={onClick ? 'button' : undefined}>
         <Block className="y-box--inner" padding={GutterSize.SMALL}>
           {children}
         </Block>
       </div>
     );
+  }
+
+  private getClasses() {
+    const classes = ['y-box', this.props.className];
+    if (this.props.onClick) {
+      classes.push('y-box__hasClick');
+    }
+    return join(classes);
   }
 }
