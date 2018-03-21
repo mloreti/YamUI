@@ -4,6 +4,7 @@ import * as React from 'react';
 import { BaseComponentProps } from '../../util/BaseComponent/props';
 import Clickable from '../Clickable';
 import EditIcon from '../Icon/icons/Edit';
+import Text, { TextColor } from '../Text';
 import TextField, { ITextField } from '../TextField';
 import { KeyCodes } from '../../util/enums';
 import './EditableText.css';
@@ -54,10 +55,11 @@ export interface EditableTextState {
  * Displays text which can be edited on click.
  */
 export default class EditableText extends React.Component<EditableTextProps, EditableTextState> {
-  private textFieldRef: ITextField;
+  private textFieldRef: ITextField | null;
 
   constructor(props: EditableTextProps) {
     super(props);
+    this.textFieldRef = null;
     this.state = {
       isEditing: false,
       editedValue: '',
@@ -70,25 +72,27 @@ export default class EditableText extends React.Component<EditableTextProps, Edi
 
     if (isEditing) {
       return (
-        <TextField
-          underlined={true}
-          onChange={this.updateInternalEditedDescription}
-          value={editedValue}
-          placeHolder={placeHolder}
-          maxLength={maxLength}
-          componentRef={this.setTextFieldRef}
-          onBlur={this.commitEdit}
-          onKeyDown={this.onKeyDown}
-        />
+        <div className="y-editableText">
+          <TextField
+            underlined={true}
+            onChange={this.updateInternalEditedDescription}
+            value={editedValue}
+            placeHolder={placeHolder}
+            maxLength={maxLength}
+            componentRef={this.setTextFieldRef}
+            onBlur={this.commitEdit}
+            onKeyDown={this.onKeyDown}
+          />
+        </div>
       );
     }
 
     return (
-      <span>
-        <Clickable onClick={this.handleEditClick}>
-          <EditIcon /> {text || promptText}
+      <Text className="y-editableText" color={TextColor.METADATA}>
+        <Clickable onClick={this.handleEditClick} unstyled={true} className="y-editableText--clickable">
+          <EditIcon /> <span className="y-editableText--clickableText">{text || promptText}</span>
         </Clickable>
-      </span>
+      </Text>
     );
   }
 
@@ -124,7 +128,7 @@ export default class EditableText extends React.Component<EditableTextProps, Edi
 
   private handleEditClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.stopPropagation();
-    this.setState(() => ({ isEditing: true, editedValue: this.props.text }));
+    this.setState(() => ({ isEditing: true, editedValue: this.props.text || '' }));
     this.setTextFieldFocus();
     if (this.props.onBeginEditing) {
       this.props.onBeginEditing();
