@@ -4,7 +4,7 @@ import { shallow, ShallowWrapper } from 'enzyme';
 import PreviewCard, { PreviewCardProps } from './index';
 
 describe('<PreviewCard />', () => {
-  let component: ShallowWrapper<PreviewCardProps, {}>;
+  let component: ShallowWrapper<PreviewCardProps>;
 
   describe('with default options', () => {
     beforeEach(() => {
@@ -18,9 +18,7 @@ describe('<PreviewCard />', () => {
 
   describe('with additional className', () => {
     beforeEach(() => {
-      component = shallow(
-        <PreviewCard name="Filename.gif" loadingText="" className="TEST_CLASSNAME" />,
-      );
+      component = shallow(<PreviewCard name="Filename.gif" loadingText="" className="TEST_CLASSNAME" />);
     });
 
     it('matches its snapshot', () => {
