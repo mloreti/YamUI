@@ -1,6 +1,6 @@
 /*! Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license. */
 import * as React from 'react';
-import { View, Text, ViewStyle } from 'react-native';
+import { View, Text, TextStyle } from 'react-native';
 import Styles from './HeadingStyles';
 
 import { HeadingLevel, HeadingSize } from './enums';
@@ -15,6 +15,7 @@ export interface HeadingProps {
    * or as plain inline text.
    */
   size?: HeadingSize;
+  color?: string;
 }
 
 /**
@@ -37,13 +38,16 @@ export default class Heading extends React.Component<HeadingProps> {
   }
 
   private getStyles() {
-    const { size, level } = this.props;
+    const { size, level, color } = this.props;
 
-    const styles: ViewStyle[] = [Styles.heading];
+    const styles: TextStyle[] = [Styles.heading];
     if (size) {
       styles.push(Styles[size]);
     } else if (level) {
       styles.push(Styles[level]);
+    }
+    if (color) {
+      styles.push({ color });
     }
     return styles;
   }
