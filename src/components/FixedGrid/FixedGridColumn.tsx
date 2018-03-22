@@ -29,13 +29,17 @@ export default class FixedGridColumn extends React.Component<FixedGridColumnProp
     // NOTE: We achieve vertical-align with flexbox. The extra inner div prevents direct children
     //       from receiving flex-child styling and getting wonky vertical alignment.
     const content = !hasVerticalAlign ? (
-      children
+      <View style={[...this.getStyles()]}>
+        {children}
+      </View>
     ) : (
       <View style={[...this.getStyles()]}>
-        <View>{children}</View>
+        <View>
+          {children}
+        </View>
       </View>
     );
-    return <View>{content}</View>;
+    return content;
   }
 
   private getStyles() {

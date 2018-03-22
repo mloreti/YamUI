@@ -21,10 +21,6 @@ export interface FixedGridRowProps {
  * A `FixedGridRow` represents each row inside a `FixedGrid`. It should wrap `FixedGridColumn`s.
  */
 export default class FixedGridRow extends React.Component<FixedGridRowProps> {
-  public static defaultProps = {
-    gutterSize: GutterSize.SMALL,
-  };
-
   public render() {
     const { children } = this.props;
 
@@ -33,8 +29,11 @@ export default class FixedGridRow extends React.Component<FixedGridRowProps> {
 
   private getStyles() {
     const { bottomSpacing, gutterSize } = this.props;
-
-    const styles: ViewStyle[] = [Styles.fixedGridRow, Styles[`fixedGridRow__gutter_${gutterSize}`]];
+ 
+    const styles: ViewStyle[] = [Styles.fixedGridRow];
+    if (gutterSize) {
+      styles.push(Styles[`fixedGridRow__gutter_${gutterSize}`]);
+    }
     if (bottomSpacing) {
       styles.push(Styles[`bottomSpacing_${bottomSpacing}`]);
     }
