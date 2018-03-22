@@ -16,6 +16,7 @@ export interface HeadingProps {
    */
   size?: HeadingSize;
   color?: string;
+  noBold?: boolean;
 }
 
 /**
@@ -34,9 +35,12 @@ export default class Heading extends React.Component<HeadingProps> {
   }
 
   private getStyles() {
-    const { size, level, color } = this.props;
+    const { size, level, color, noBold } = this.props;
 
     const styles: TextStyle[] = [Styles.heading];
+    if (noBold) {
+      styles.pop();
+    }
     if (size) {
       styles.push(Styles[size]);
     } else if (level) {
