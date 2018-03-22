@@ -12,9 +12,15 @@
     "noUnusedParameters": true,
     "experimentalDecorators": true,
     "rootDir": "./src",
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "lib": ["es5", "es6", "dom"],
+    "types": [
+      "react",
+      "react-native",
+      "jest"
+    ]
   },
   "exclude": [
     "./config"
-  ]
+  ],
 }

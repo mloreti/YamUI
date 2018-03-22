@@ -2,14 +2,14 @@
   "name": "yamui",
   "productName": "YamUI",
   "description": "UI component framework for Yammer.com",
-  "version": "5.3.1",
-  "style": "dist/yamui-base.css",
+  "version": "5.4.0",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/Microsoft/YamUI.git"
   },
   "dependencies": {
+    "@types/react-native": "^0.52.18",
     "core-decorators": "=0.20.0",
     "normalize.css": "=6.0.0",
     "office-ui-fabric-react": "=5.64.4",
@@ -73,7 +73,8 @@
   "peerDependencies": {
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
-    "typescript": "^2.5.0"
+    "typescript": "^2.5.0",
+    "react-native": "^0.54.2"
   },
   "scripts": {
     "clean:build": "rimraf build/*",
@@ -81,8 +82,6 @@
     "clean:docs": "rimraf build/docs/*",
     "clean:icons": "rimraf build/icons/* src/components/Icon/icons/*.tsx",
     "clean": "run-p clean:build clean:dist",
-    "build:css:global": "postcss src/css/index.css --output dist/yamui-base.css",
-    "build:css:components": "postcss \"src/components/**/*.css\" --dir \"dist/components\" --base \"src/components\"",
     "build:ts:components": "tsc --project .",
     "build": "run-s clean build:**",
     "test:eslint:root": "eslint \"./*.+(js|jsx)\"",

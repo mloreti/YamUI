@@ -61,7 +61,6 @@ module.exports = {
     group: path.resolve(__dirname, 'context/group.json'),
     file: path.resolve(__dirname, 'context/file.json'),
   },
-  require: [path.resolve(root, 'src/css/index.css')],
   serverPort: 5555,
   styleguideDir: path.resolve(root, 'build/docs'),
   styleguideComponents: {

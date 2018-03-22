@@ -4,10 +4,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.css$/,
-        loaders: ['style-loader', 'css-loader', 'postcss-loader'],
-      },
-      {
         test: /\.tsx?$/,
         exclude: /node_modules/,
         loaders: ['ts-loader'],
