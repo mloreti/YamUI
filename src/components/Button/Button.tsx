@@ -164,7 +164,6 @@
 //       </span>
 //     );
 //   }
-
 //   private isLoading() {
 //     return this.props.status === ButtonStatus.LOADING;
 //   }

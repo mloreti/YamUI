@@ -28,10 +28,10 @@ export default class FixedGridRow extends React.Component<FixedGridRowProps> {
   public render() {
     const { children } = this.props;
 
-    return <View style={this.getClasses()}>{children}</View>;
+    return <View style={this.getStyles()}>{children}</View>;
   }
 
-  private getClasses() {
+  private getStyles() {
     const { bottomSpacing, gutterSize } = this.props;
 
     const styles: ViewStyle[] = [Styles.fixedGridRow, Styles[`fixedGridRow__gutter_${gutterSize}`]];

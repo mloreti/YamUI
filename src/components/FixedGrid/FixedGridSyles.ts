@@ -1,6 +1,6 @@
 /*! Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license. */
 import { StyleSheet, ViewStyle } from 'react-native';
-import { Gutters } from '../../utils/variables';
+import { Gutters, baseSize } from '../../utils/variables';
 
 export interface Style {
   [key: string]: ViewStyle;
@@ -30,22 +30,22 @@ const styles: Style = StyleSheet.create({
     display: 'flex',
   },
   bottomSpacing_xxLarge: {
-    marginBottom: Gutters.xxLarge,
+    marginBottom: Gutters.xxLarge * baseSize,
   },
   bottomSpacing_xLarge: {
-    marginBottom: Gutters.xLarge,
+    marginBottom: Gutters.xLarge * baseSize,
   },
   bottomSpacing_large: {
-    marginBottom: Gutters.large,
+    marginBottom: Gutters.large * baseSize,
   },
   bottomSpacing_medium: {
-    marginBottom: Gutters.medium,
+    marginBottom: Gutters.medium * baseSize,
   },
   bottomSpacing_small: {
-    marginBottom: Gutters.small,
+    marginBottom: Gutters.small * baseSize,
   },
   bottomSpacing_xSmall: {
-    marginBottom: Gutters.xSmall,
+    marginBottom: Gutters.xSmall * baseSize,
   },
   fixedGridColumn: {
     flexGrow: 1,
@@ -62,22 +62,22 @@ const styles: Style = StyleSheet.create({
     flexShrink: 0,
   },
   fixedGridRow__gutter_xxLarge: {
-    marginLeft: Gutters.xxLarge,
+    marginLeft: Gutters.xxLarge * baseSize,
   },
   fixedGridRow__gutter_xLarge: {
-    marginLeft: Gutters.xLarge,
+    marginLeft: Gutters.xLarge * baseSize,
   },
   fixedGridRow__gutter_large: {
-    marginLeft: Gutters.large,
+    marginLeft: Gutters.large * baseSize,
   },
   fixedGridRow__gutter_medium: {
-    marginLeft: Gutters.medium,
+    marginLeft: Gutters.medium * baseSize,
   },
   fixedGridRow__gutter_small: {
-    marginLeft: Gutters.small,
+    marginLeft: Gutters.small * baseSize,
   },
   fixedGridRow__gutter_xSmall: {
-    marginLeft: Gutters.xSmall,
+    marginLeft: Gutters.xSmall * baseSize,
   },
   fixedGridColumn_inner: {
     height: 100,
