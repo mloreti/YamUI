@@ -27,14 +27,10 @@ export default class Heading extends React.Component<HeadingProps> {
   render() {
     const { children, size } = this.props;
     if (size === 'none') {
-      return <View>{children}</View>;
+      return <Text>{children}</Text>;
     }
 
-    return (
-      <View>
-        <Text style={this.getStyles()}>{children}</Text>
-      </View>
-    );
+    return <Text style={this.getStyles()}>{children}</Text>;
   }
 
   private getStyles() {
