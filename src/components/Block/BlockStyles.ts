@@ -40,7 +40,7 @@ export interface Style {
 
 const Styles: Style = StyleSheet.create({
   block: {
-    width: 100,
+    flex: 1,
   },
   block__topSpacing_xxLarge: {
     marginTop: 48,
