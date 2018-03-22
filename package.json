@@ -9,7 +9,6 @@
     "url": "https://github.com/Microsoft/YamUI.git"
   },
   "dependencies": {
-    "@types/react-native": "^0.52.18",
     "core-decorators": "=0.20.0",
     "normalize.css": "=6.0.0",
     "office-ui-fabric-react": "=5.64.4",
@@ -23,6 +22,7 @@
     "@types/prop-types": "=15.5.1",
     "@types/react": "=15.6.14",
     "@types/react-dom": "=15.5.7",
+    "@types/react-native": "^0.52.18",
     "css-loader": "=0.27.3",
     "enzyme": "=2.9.1",
     "eslint": "=4.8.0",
