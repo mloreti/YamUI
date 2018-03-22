@@ -1,6 +1,6 @@
 /*! Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license. */
 import * as React from 'react';
-import { View, Text, TextStyle } from 'react-native';
+import { Text, TextStyle } from 'react-native';
 import Styles from './HeadingStyles';
 
 import { HeadingLevel, HeadingSize } from './enums';
