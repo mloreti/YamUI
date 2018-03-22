@@ -2,6 +2,17 @@
 import * as React from 'react';
 import { View } from 'react-native';
 import { GutterSize } from '../enums';
+import Styles from './BlockStyles';
+
+export enum BlockGutterSize {
+  XXLARGE = 'xxLarge',
+  XLARGE = 'xLarge',
+  LARGE = 'large',
+  MEDIUM = 'medium',
+  SMALL = 'small',
+  XSMALL = 'xSmall',
+}
+
 // import { TextColor, TextSize } from '../Text/enums';
 
 export interface BlockProps {
@@ -67,6 +78,48 @@ export default class Block extends React.Component<BlockProps, {}> {
   render() {
     const { children } = this.props;
 
-    return <View><View>{children}</View></View>;
+    return (
+      <View style={this.getStyles()}>
+        <View style={this.getInnerStyles()}>{children}</View>
+      </View>
+    );
+  }
+
+  private getStyles() {
+    const styles = [Styles.block];
+    const { topSpacing, bottomSpacing, textAlign } = this.props;
+
+    if (topSpacing) {
+      styles.push(Styles[`block__topSpacing_${topSpacing}`]);
+    }
+
+    if (bottomSpacing) {
+      styles.push(Styles[`block__bottomSpacing_${bottomSpacing}`]);
+    }
+
+    if (textAlign === 'center' || textAlign === 'right') {
+      styles.push(Styles[`block__textAlign_${textAlign}`]);
+    }
+
+    return styles;
+  }
+
+
+  private getInnerStyles() {
+    const { padding, horizontalPadding, verticalPadding } = this.props;
+
+    const styles = [];
+
+    if (padding) {
+      styles.push(Styles[`block__inner__padding_${padding}`]);
+    }
+    if (horizontalPadding) {
+      styles.push(Styles[`block__inner__horizontalPadding_${horizontalPadding}`]);
+    }
+    if (verticalPadding) {
+      styles.push(Styles[`block__inner__verticalPadding_${verticalPadding}`]);
+    }
+
+    return styles;
   }
 }
