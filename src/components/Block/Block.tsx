@@ -67,6 +67,10 @@ export default class Block extends React.Component<BlockProps, {}> {
   render() {
     const { children } = this.props;
 
-    return <View><View>{children}</View></View>;
+    return (
+      <View>
+        <View>{children}</View>
+      </View>
+    );
   }
 }

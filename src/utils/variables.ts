@@ -1,5 +1,7 @@
 /*! Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license. */
 
+export const baseSize = 16;
+
 export enum Gutters {
   xxLarge = 2.4,
   xLarge = 2,
