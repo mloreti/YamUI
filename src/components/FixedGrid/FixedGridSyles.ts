@@ -50,7 +50,7 @@ const styles: Style = StyleSheet.create({
   fixedGridColumn: {
     flexGrow: 1,
     flexShrink: 1,
-    // flexBasis: 100,
+    flexBasis: 100,
     minWidth: 0,
   },
   fixedGridColumn__isFixed: {
