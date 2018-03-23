@@ -1,6 +1,8 @@
 /*! Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license. */
 import * as React from 'react';
-import { View, ViewStyle } from 'react-native';
+import { ViewStyle } from 'react-native';
+
+import Block from '../Block';
 import Styles from './FixedGridSyles';
 
 export interface FixedGridColumnProps {
@@ -20,30 +22,22 @@ export interface FixedGridColumnProps {
    * @default 'top'
    */
   verticalAlign?: 'top' | 'middle' | 'bottom';
+
+  distributeWidth?: boolean;
 }
 
 export default class FixedGridColumn extends React.Component<FixedGridColumnProps> {
   public render() {
-    const { children, verticalAlign } = this.props;
-    const hasVerticalAlign = verticalAlign && verticalAlign !== 'top';
-    // NOTE: We achieve vertical-align with flexbox. The extra inner div prevents direct children
-    //       from receiving flex-child styling and getting wonky vertical alignment.
-    const content = !hasVerticalAlign ? (
-      <View style={[...this.getStyles()]}>
+    const { children } = this.props;
+    return (
+      <Block style={[...this.getStyles()]}>
         {children}
-      </View>
-    ) : (
-      <View style={[...this.getStyles()]}>
-        <View>
-          {children}
-        </View>
-      </View>
+      </Block>
     );
-    return content;
   }
 
   private getStyles() {
-    const { fixed, width, verticalAlign } = this.props;
+    const { fixed, width, verticalAlign, distributeWidth } = this.props;
     const styles: ViewStyle[] = [Styles.fixedGridColumn];
     if (verticalAlign) {
       styles.push(Styles[verticalAlign]);
@@ -55,6 +49,12 @@ export default class FixedGridColumn extends React.Component<FixedGridColumnProp
       styles.push(Styles.fixedGridColumn__hasWidth);
       styles.push({ width: this.props.width });
     }
+    if (distributeWidth) {
+      styles.push({
+        flex: 1,
+      });
+    }
+    
     return styles;
   }
 }

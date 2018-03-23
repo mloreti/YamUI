@@ -27,7 +27,8 @@ export interface Style {
 
 const styles: Style = StyleSheet.create({
   fixedGridRow: {
-    display: 'flex',
+    flex: 1,
+    flexDirection: 'row',
   },
   bottomSpacing_xxLarge: {
     marginBottom: Gutters.xxLarge * baseSize,
@@ -48,10 +49,10 @@ const styles: Style = StyleSheet.create({
     marginBottom: Gutters.xSmall * baseSize,
   },
   fixedGridColumn: {
-    flexGrow: 1,
+    /* flexGrow: 1,
     flexShrink: 1,
     flexBasis: 100,
-    minWidth: 0,
+    minWidth: 0, */
   },
   fixedGridColumn__isFixed: {
     flexGrow: 0,

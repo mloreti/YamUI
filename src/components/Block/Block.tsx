@@ -16,16 +16,21 @@ export enum BlockGutterSize {
 // import { TextColor, TextSize } from '../Text/enums';
 
 export interface BlockProps {
+  backgroundColor?: string;
+
+  spacing?: number;
   /**
    * Gutter spacing to be added above this block.
    */
-  topSpacing?: GutterSize;
+  topSpacing?: number;
 
   /**
    * Gutter spacing to be added below this block.
    */
-  bottomSpacing?: GutterSize;
+  bottomSpacing?: number;
 
+  leftSpacing?: number;
+  rightSpacing?: number;
   /**
    * Padding to be added uniformly within this block.
    */
@@ -66,6 +71,8 @@ export interface BlockProps {
    * Limits text content to a single line, hiding additional text with an ellipsis.
    */
   ellipsis?: boolean;
+  height?: number;
+  style?: {};
 }
 
 /**
@@ -80,46 +87,63 @@ export default class Block extends React.Component<BlockProps, {}> {
 
     return (
       <View style={this.getStyles()}>
-        <View style={this.getInnerStyles()}>{children}</View>
+        {children}
       </View>
     );
   }
 
   private getStyles() {
     const styles = [Styles.block];
-    const { topSpacing, bottomSpacing, textAlign } = this.props;
+    const { 
+      spacing, 
+      topSpacing, 
+      bottomSpacing, 
+      leftSpacing, 
+      rightSpacing, 
+      textAlign, 
+      backgroundColor, 
+      height,
+      style,
+    } = this.props;
+
+    if (spacing) {
+      styles.push({ margin: spacing });
+    }
+
+    if (leftSpacing) {
+      styles.push({ marginLeft: leftSpacing });
+    }
+
+    if (rightSpacing) {
+      styles.push({ marginRight: rightSpacing });
+    }
 
     if (topSpacing) {
-      styles.push(Styles[`block__topSpacing_${topSpacing}`]);
+      styles.push({ marginTop: topSpacing });
     }
 
     if (bottomSpacing) {
-      styles.push(Styles[`block__bottomSpacing_${bottomSpacing}`]);
+      styles.push({ marginBottom: bottomSpacing });
     }
 
     if (textAlign === 'center' || textAlign === 'right') {
       styles.push(Styles[`block__textAlign_${textAlign}`]);
     }
 
-    return styles;
-  }
-
-
-  private getInnerStyles() {
-    const { padding, horizontalPadding, verticalPadding } = this.props;
-
-    const styles = [];
-
-    if (padding) {
-      styles.push(Styles[`block__inner__padding_${padding}`]);
-    }
-    if (horizontalPadding) {
-      styles.push(Styles[`block__inner__horizontalPadding_${horizontalPadding}`]);
-    }
-    if (verticalPadding) {
-      styles.push(Styles[`block__inner__verticalPadding_${verticalPadding}`]);
+    if (backgroundColor) {
+      styles.push({
+        backgroundColor,
+      });
     }
 
+    if (height) {
+      styles.push({
+        height,
+      });
+    }
+    if (style) {
+      styles.push(style);
+    }
     return styles;
   }
 }

@@ -12,7 +12,7 @@ export interface Style {
   text: ViewStyle;
 }
 
-const styles: Style = StyleSheet.create({
+const Styles: Style = StyleSheet.create({
   avatar: {
     position: 'relative',
     flex: 1,
@@ -21,32 +21,33 @@ const styles: Style = StyleSheet.create({
   },
   text: {
     textAlign: 'center',
+    marginTop: 12,
   },
   avatar__size_xLarge: {
-    height: '72px',
-    width: '72px',
+    height: 72,
+    width: 72,
     borderRadius: 36,
   },
   avatar__size_large: {
-    height: '48px',
-    width: '48px',
+    height: 48,
+    width: 48,
     borderRadius: 24,
   },
   avatar__size_medium: {
-    height: '40px',
-    width: '40px',
+    height: 40,
+    width: 40,
     borderRadius: 20,
   },
   avatar__size_small: {
-    height: '32px',
-    width: '32px',
+    height: 32,
+    width: 32,
     borderRadius: 16,
   },
   avatar__size_xSmall: {
-    height: '24px',
-    width: '24px',
+    height: 24,
+    width: 24,
     borderRadius: 12,
   },
 });
 
-export default styles;
+export default Styles;

@@ -15,6 +15,7 @@ export interface FixedGridRowProps {
    * @default GutterSize.SMALL
    */
   gutterSize?: GutterSize;
+  alignItems?: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline' | undefined;
 }
 
 /**
@@ -28,7 +29,7 @@ export default class FixedGridRow extends React.Component<FixedGridRowProps> {
   }
 
   private getStyles() {
-    const { bottomSpacing, gutterSize } = this.props;
+    const { bottomSpacing, gutterSize, alignItems } = this.props;
  
     const styles: ViewStyle[] = [Styles.fixedGridRow];
     if (gutterSize) {
@@ -36,6 +37,12 @@ export default class FixedGridRow extends React.Component<FixedGridRowProps> {
     }
     if (bottomSpacing) {
       styles.push(Styles[`bottomSpacing_${bottomSpacing}`]);
+    }
+
+    if (alignItems) {
+      styles.push({
+        alignItems,
+      });
     }
 
     return styles;
